@@ -39,7 +39,7 @@ public class MathServices {
          
             
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            String urlUsuario = "https://95zlv1ypw6.execute-api.us-east-1.amazonaws.com/Beta?value=" + datos[0];
+            String urlUsuario = "https://fuvtk0qyp7.execute-api.us-east-1.amazonaws.com/Beta?value=" + datos[0];
             URL url = new URL(urlUsuario);
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             String inputLine = null;
@@ -58,4 +58,8 @@ public class MathServices {
 		}
 		return 4567; //returns default port if heroku-port isn't set(i.e. on localhost)    }
 	}
+
+	public static Integer square(Integer i){
+        return i*i;
+    }
 }
